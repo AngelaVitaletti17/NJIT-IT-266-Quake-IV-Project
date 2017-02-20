@@ -738,6 +738,7 @@ entityDef player_marine
 	"ammo_rocketlauncher"					"0"
 	"ammo_grenadelauncher"					"-1" //Infinite grenades, AV
 	"ammo_lightninggun"					"0"
+	"ammo_dmg"							"-1"
 	"ammo_none"						"-1"
 
 	"max_ammo_blaster"					"-1"

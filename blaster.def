@@ -227,6 +227,12 @@ model weapon_blaster_world
 // Projectile
 //-------------------------------------------------------------------------------------------------------------------0
 
+
+//For the projectile, when the blaster is charged, it fires a "super 'nade" that I modeled. Unfortunately, I could not
+//figure out how to texture it properly, AV
+
+
+
 entityDef hitscan_blaster
 {
 	"range"						"10000"
@@ -257,7 +263,7 @@ entityDef projectile_blaster
 	"cone"						"2"
 	"noshadows"					"1"
 	
-	"model"						"models/weapons/grenadelauncher/w_grenade.lwo" //AV															
+	"model"						"models/weapons/supernade/supernade.lwo" //AV															
 	"def_damage"				"damage_blaster"
 																															
 	"speed"						"700"
@@ -271,9 +277,9 @@ entityDef projectile_blaster
 	"gravity"					"1"
 	"fuse"						"0.5" //2.5
 								
-	"detonate_on_fuse"			"0" //Ignore fuse time, AV
+	"detonate_on_fuse"			"1" //Ignore fuse time, AV
 	"detonate_on_death"			"0"
-	"detonate_on_world"			"1" //Just explode when on the ground, AV
+	"detonate_on_world"			"0" //Just explode when on the ground, AV
 	"detonate_on_actor"			"1"
 	"detonateTestGroundMaterial"	"1"
 								
@@ -358,7 +364,7 @@ entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"500" //Increased, AV
+	"damage"					"1500" //Increased, AV
 	"radius"					"200" //Increased, AV
 	"knockback"					"300" //Increased, AV
 	"push"						"2500"
