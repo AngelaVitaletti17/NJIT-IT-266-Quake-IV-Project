@@ -277,9 +277,9 @@ entityDef projectile_blaster
 	"gravity"					"1"
 	"fuse"						"0.5" //2.5
 								
-	"detonate_on_fuse"			"1" //Ignore fuse time, AV
+	"detonate_on_fuse"			"1" 
 	"detonate_on_death"			"0"
-	"detonate_on_world"			"0" //Just explode when on the ground, AV
+	"detonate_on_world"			"0" 
 	"detonate_on_actor"			"1"
 	"detonateTestGroundMaterial"	"1"
 								
